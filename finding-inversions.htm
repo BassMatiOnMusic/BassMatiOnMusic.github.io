@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="template-info" content="empty.htm 2021-04-20 usp" />
+<meta name="author" content="usp" />
+<meta name="creation-date" content="2021-06-15" />
+<meta name="editor" content="usp" />
+<meta name="change-date" content="2021-06-17" />
+<meta name="categories" content="Music > Guitar > Inversions" />
+<meta name="tags" content="Music, guitar, inversion, chord" />
+<meta name="description" content="A simple method to find chord inversions on the fretboard." />
+<link rel="stylesheet" href="/inc/page.css" />
+<link rel="stylesheet" href="/inc/fretboard/guitar.css" />
+ 
+<title></title>
+</head><body>
+<h1 class="page-title">Fretboard Navigation</h1>
+<h1 class="page-subtitle">How to find chord inversions</h1>
+
+<p><a href="">Music</a> > <a href="">Guitar</a> > <a href="">Fretboard Navigation</a> > <a href="">Chord Inversions</a></p>
+
+<div class="menu-bar"><button id="stopHide" title="Show collapsed content before using the browser's text search function.">Show Hidden Content</button>
+</div>
+
+<p>Let's consider a dominant 7th chord like C7. It has the following interval structure:</p>
+
+<figcaption>C7 Chord Structure</figcaption>
+<table class="scale"><tbody><tr>
+	<td>R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+	<td>R</td>
+</tr></tbody><tfoot><tr>
+	<td>0</td>
+	<td>1</td>
+	<td>2</td>
+	<td>3</td>
+	<td>4</td>
+	<td>5</td>
+	<td>6</td>
+	<td>7</td>
+	<td>8</td>
+	<td>9</td>
+	<td>10</td>
+	<td>11</td>
+	<td>12</td>
+</tr></tfoot></table>
+
+<p>The chord has a major 3rd, a perfect 5th and a minor 7th interval.</p>
+
+<p>To find the next chord "inversion" shape on the fretboard, we will move and transform the chord pattern on the fretbord towards higher frets. The trick is to find and apply the distance to the next higher interval for each chord note. To be specific, &hellip; </p>
+
+<ul>
+<li>The root changes to a major 3rd, 4 half-tones above.</li>
+<li>The major 3rd changes to a perfect 5th, 3 half-tones higher.</li>
+<li>The perfect fifth changes to a minor 7th, 3 half-tones higher.</li>
+<li>The minor 7th changes to the perfect octave, 2 half-tones higher.</li>
+</ul>
+
+<p>This can be easily derived from the chord structure above. Now let's do that on the fretboard:</p>
+
+<ul>
+<li>The next interval above the major 3rd on string 2 fret 5 is the perfect 5th on fret 8.</li>
+<li>The next interval above the minor 7th on string 3 fret 3 is the root on fret 5.</li>
+<li>The next interval above the 5th on string 4 fret 5 is the minor 7th on fret 8.</li>
+<li>The next interval above the root on strint 5 fret 3 is the major 3rd on fret 7.</li>
+</ul>
+
+<p>And so on. Here are the chord and transformation patterns beginning with C7 with the root on string 5, fret 3:</p>
+
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<th>➀</th>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<th>➁</th>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<th>➂</th>
+	<td>m7</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<th>➃</th>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<th>➄</th>
+	<td class="root">R</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<th>➅</th>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td></td>
+	<td>III</td>
+	<td></td>
+	<td>V</td>
+</tr></tfoot>
+</table>
+<table class="chord inline no-fretcolor"><caption></caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<td>m7</td>
+	<td></td>
+	<td>R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>5</td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+</tr><tr>
+	<td class="root">R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>III</td>
+	<td></td>
+	<td>V</td>
+	<td></td>
+	<td>VII</td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<td class="root">R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>V</td>
+	<td></td>
+	<td>VII</td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline no-fretcolor"><caption></caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+</tr><tr>
+	<td>R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+	<td>R</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>V</td>
+	<td></td>
+	<td>VII</td>
+	<td></td>
+	<td>IX</td>
+	<td></td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+</tr><tr>
+	<td>3</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td class="root">R</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td>5</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>IX</td>
+	<td></td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline no-fretcolor"><caption></caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+	<td>R</td>
+	<td></td>
+</tr><tr>
+	<td>3</td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td>R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<td></td>
+	<td>5</td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>IX</td>
+	<td></td>
+	<td></td>
+	<td>XII</td>
+	<td></td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td class="root">R</td>
+	<td></td>
+</tr><tr>
+	<td>5</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>XII</td>
+	<td></td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline no-fretcolor"><caption></caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td>R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<td>5</td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+	<td>R</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>XII</td>
+	<td></td>
+	<td></td>
+	<td>XV</td>
+	<td></td>
+	<td>XVII</td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<td>m7</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<td class="root">R</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>XV</td>
+	<td></td>
+	<td>XVII</td>
+	<td></td>
+</tr></tfoot>
+</table>
+
+<p>After the fourth transformation, we again obtain the pattern we started with. Note that all chord intervals appear on a different string after transformation.</p>
+
+<p>Here is the chord shape sequence, without transformation patterns:</p>
+
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<th>➀</th>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<th>➁</th>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<th>➂</th>
+	<td>m7</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<th>➃</th>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<th>➄</th>
+	<td class="root">R</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<th>➅</th>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td></td>
+	<td>III</td>
+	<td></td>
+	<td>V</td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<td class="root">R</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>V</td>
+	<td></td>
+	<td>VII</td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>m7</td>
+</tr><tr>
+	<td>3</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td class="root">R</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td>5</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>IX</td>
+	<td></td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td class="root">R</td>
+	<td></td>
+</tr><tr>
+	<td>5</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<td></td>
+	<td>m7</td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>XII</td>
+	<td></td>
+	<td></td>
+</tr></tfoot>
+</table>
+<table class="chord inline"><caption>C7</caption>
+<tbody>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>3</td>
+</tr><tr>
+	<td>m7</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td>5</td>
+</tr><tr>
+	<td class="root">R</td>
+	<td></td>
+	<td></td>
+</tr><tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody>
+<tfoot><tr>
+	<td>XV</td>
+	<td></td>
+	<td>XVII</td>
+	<td></td>
+</tr></tfoot>
+</table>
+
+<p>Note that the last two chord pattern are only practical with a cutaway. On a classical guitar, they are virtually impossible, except with your hand from above.</p>
+
+<script src="/inc/page.js" ></script>
+</body></html>
