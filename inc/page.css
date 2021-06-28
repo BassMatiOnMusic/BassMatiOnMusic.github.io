@@ -1,6 +1,6 @@
 /*
  *	page.css
- *	2021-02-12 usp
+ *	2021-06-27 usp
  */
 
 @import url(./colors.css);
@@ -26,6 +26,9 @@
 	.menu-bar { display : none !important ; }
 	}
 
+.hscroll {
+	overflow-x : auto;
+	}
 .imgbox {
 	border : 1px solid silver;
 	width : 100% ;
@@ -42,6 +45,10 @@
 	width : 100% ;
 	height : auto ;
 	border : 1px none silver;
+	}
+
+.no-borders {
+	border-style : none ;
 	}
 
 .note {
@@ -98,7 +105,10 @@ body {
 	line-height : 180% ;
 	padding-bottom : 60px ;
 	}
-
+	
+caption {
+	margin-bottom: 5px ;
+	}
 dd {
 	margin-left: 20px ;
 	}
@@ -198,6 +208,10 @@ table.flat-borders td, th {
 	border : solid 1px silver;
 	padding-left: 5px;
 	padding-right: 5px;
+	}
+	
+table.no-borders td, th {
+	border-style : none ;
 	}
 
 ul[collapsible] {
