@@ -1,0 +1,27 @@
+#page-header {
+	background-color : #cc0000 ;
+	}
+table {
+	margin-left : 0px ;
+	}
+tr.dark { 
+	background-color : #E0E0E0;
+	}
+table.data-left tbody td { 
+	text-align : left 
+	}
+table.flat-borders tr * {
+	padding : 5px 10px ;	
+	}
+table th, table td  {
+	font-weight : normal ;
+	}
+table thead th {
+	font-style : italic ;
+	}
+table tbody th {
+	text-align : left ;
+	}
+table tbody td {
+	text-align : center ;
+	}

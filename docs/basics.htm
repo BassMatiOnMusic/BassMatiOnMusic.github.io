@@ -1,0 +1,513 @@
+﻿<html lang="en-US"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="template-info" file-name="empty.htm" version="2022-02-09" editor="USP" />
+<meta name="author" content="USP" />
+<meta name="creation-date" content="2022-07-19" />
+<meta name="editor" content="USP" />
+<meta name="change-date" content="2022-07-20" />
+<meta name="version" content="1" />
+<meta name="categories" content="Music > Theory" />
+<meta name="tags" content="music, theory, basics" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="/inc/page.css" />
+ <link rel="stylesheet" href="/local.css" />
+ <link rel="stylesheet" href="/inc/music/circular-scale-5.css" />
+
+ <style>
+ table tr.emphasis { background-color : #E0E0E0 }
+ </style>
+
+<script type="module">
+import { createCircularScale } from "/inc/music/circular-scale-5.js";
+globalThis.music = { } ;
+globalThis.music.createCircularScale = createCircularScale ;
+</script>
+
+<title>Music Theory - Basics</title>
+
+</head><body><header id="page-header"></header><div id="main-toolbar"></div><main id="page-content">
+
+<h1>Basics</h1>
+
+<p id="page-abstract"></p>
+
+<h2 cbc>Notes, Intervals, Scales</h2><div>
+
+<p>In western music, we have seven <em>notes</em>, A, B, C, D, E, F and G. The distance between two notes is called <em>interval</em>. The length of an interval is measured in <em>half-tone steps</em>. The distance between the notes varies, most are two half-steps apart, some are one half-step apart:</p>
+
+<figure><figcaption class="figure">Note names</figcaption>
+<svg version="1.1" width="405" viewBox="-15 -50 390 100" style="border:1px none silver ; max-width:100%">
+<g stroke="black" stroke-width="1">
+	<path d="M 0 0 L 360 0 M 0 -10 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20" />
+</g><g fill="none" stroke="black">
+	<circle cx="0" cy="-24" r="11" />
+	<circle cx="60" cy="-24" r="11" />
+	<circle cx="90" cy="-24" r="11" />
+	<circle cx="150" cy="-24" r="11" />
+	<circle cx="210" cy="-24" r="11" />
+	<circle cx="240" cy="-24" r="11" />
+	<circle cx="300" cy="-24" r="11" />
+	<circle cx="360" cy="-24" r="11" />
+</g><g text-anchor="middle" stroke="none" font-size="12px">
+	<text x="0" y="-20">A</text>
+	<text x="60" y="-20">B</text>
+	<text x="90" y="-20">C</text>
+	<text x="150" y="-20">D</text>
+	<text x="210" y="-20">E</text>
+	<text x="240" y="-20">F</text>
+	<text x="300" y="-20">G</text>
+	<text x="360" y="-20">A</text>
+	<text x="0" y="30">0</text>
+	<text x="30" y="30">1</text>
+	<text x="60" y="30">2</text>
+	<text x="90" y="30">3</text>
+	<text x="120" y="30">4</text>
+	<text x="150" y="30">5</text>
+	<text x="180" y="30">6</text>
+	<text x="210" y="30">7</text>
+	<text x="240" y="30">8</text>
+	<text x="270" y="30">9</text>
+	<text x="300" y="30">10</text>
+	<text x="330" y="30">11</text>
+	<text x="360" y="30">12</text>
+</g></svg>
+</figure>
+
+<p class="note">NOTE<br />The intervals B&ndash;C and E&ndash;F are one half step long.</p>
+
+<p>The <em>octave</em> is a special interval. It is 12 half-steps long, and the frequency of the higher note is exactly double the frequency of the lower note, and they both have the same name (A in the image above). After 12 half-steps, the scale is repeated like the hours on the clock:</p>
+
+<figure><figcaption class="figure">Notes on the A minor scale</figcaption>
+<svg id="csd-00" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-00", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "A,,B,C,,D,,E,F,,G,", gas: { class: "notes" } },
+    ) ;
+</script>
+</figure>
+
+<p>Sometimes the octave number is included in the note name to indicate the absolute pitch, and for some obscure reason octave numbers change on the C, not A, as one might guess. Such qualified note names are called <em>absolute note names</em>. In contrast, notes without octave numbers are called <em>relative note names</em> or just <em>note names</em>.</p>
+
+<figure><figcaption class="figure">Absolute Note Names</figcaption>
+<svg version="1.1" width="405" viewBox="-15 -50 405 100" style="border:1px none silver ; max-width:100%">
+<g stroke="black" stroke-width="1">
+<path d="M 0 0 L 375 0 M 0 -10 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20 l 0 20 m 25 -20" />
+</g><g fill="none" stroke="black">
+	<circle cx="0" cy="-24" r="11" />
+	<circle cx="25" cy="-24" r="11" fill="darkorange" />
+	<circle cx="75" cy="-24" r="11" />
+	<circle cx="125" cy="-24" r="11" />
+	<circle cx="150" cy="-24" r="11" />
+	<circle cx="200" cy="-24" r="11" />
+	<circle cx="250" cy="-24" r="11" />
+	<circle cx="300" cy="-24" r="11" />
+	<circle cx="325" cy="-24" r="11" fill="darkorange" />
+	<circle cx="375" cy="-24" r="11" />
+</g><g text-anchor="middle" stroke="none" font-size="12px">
+	<text x="0" y="-20">B2</text>
+	<text x="25" y="-20" fill="white">C3</text>
+	<text x="75" y="-20">D3</text>
+	<text x="125" y="-20">E3</text>
+	<text x="150" y="-20">F3</text>
+	<text x="200" y="-20">G3</text>
+	<text x="250" y="-20">A3</text>
+	<text x="300" y="-20">B3</text>
+	<text x="325" y="-20" fill="white">C4</text>
+	<text x="375" y="-20">D4</text>
+</g><g text-anchor="middle" stroke="none" font-size="12px">
+	<text x="0" y="30">0</text>
+	<text x="25" y="30">1</text>
+	<text x="50" y="30">2</text>
+	<text x="75" y="30">3</text>
+	<text x="100" y="30">4</text>
+	<text x="125" y="30">5</text>
+	<text x="150" y="30">6</text>
+	<text x="175" y="30">7</text>
+	<text x="200" y="30">8</text>
+	<text x="225" y="30">9</text>
+	<text x="250" y="30">10</text>
+	<text x="275" y="30">11</text>
+	<text x="300" y="30">12</text>
+	<text x="325" y="30">13</text>
+	<text x="350" y="30">14</text>
+	<text x="375" y="30">15</text>
+</g>
+</svg>
+</figure>
+
+<p>The <em>distribution</em> of notes over the octave is called the <em>scale</em>, and is the source of a scale's harmonic potential.</p>
+
+<p>The most fundamental scale for music theory is the <em>major scale</em>, here rooted on the note C:</p>
+
+<figure><figcaption class="figure">C major scale, notes and characteristic intervals</figcaption>
+<svg id="csd-01" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-01", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "C,,D,,E,F,,G,,A,,B", gas: { class: "notes" } },
+    ) ;
+</script>
+
+<svg id="csd-02" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-02", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,M2,,M3,p4,,p5,,M6,,M7", gas: { class: "intervals" } },
+    ) ;
+</script>
+</figure>
+
+<p> Counting of intervals is started on the root note of the scale. The distances between the root note and the other notes are the <em>characterisctic intervals</em> of the scale. In a major scale we have the following intervals:</p>
+
+<table class="flat-borders data-left">
+<caption class="autonum">Characteristic intervals on a major scale</caption>
+<colgroup></colgroup>
+<thead>
+<tr><th>Degree</th><th>Symbol</th><th>Name</th><th>length</th></tr>
+</thead><tbody>
+<tr><td>1</td><td> </td><td>prime</td><td>0</td></tr>
+<tr><td>2</td><td>M2</td><td>major 2nd</td><td>2</td></tr>
+<tr><td>3</td><td>M3</td><td>major 3rd</td><td>4</td></tr>
+<tr><td>4</td><td>p4</td><td>perfect 4th</td><td>5</td></tr>
+<tr><td>5</td><td>p5</td><td>perfect 5th</td><td>7</td></tr>
+<tr><td>6</td><td>M6</td><td>major 6th</td><td>9</td></tr>
+<tr><td>7</td><td>M7</td><td>major 7th</td><td>11</td></tr>
+</tbody></table>
+
+<p class="note">NOTE<br />Learn the characteristic intervals of the major scale by heart. All other scales and chords will be derived from and built upon these fundamental intervals.</p>
+
+<p>For example, the <em>A minor scale</em> has the same notes as the C major scale, but a begins on a different root note:</p>
+
+<figure><figcaption class="figure">Notes and characteristic intervals on a minor scale</figcaption></figure>
+<svg id="csd-03" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-03", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "A,,B,C,,D,,E,F,,G,", gas: { class: "notes" } },
+    ) ;
+</script>
+
+<svg id="csd-04" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+</svg>
+<script type="module">
+let t = music.createCircularScale ( "csd-04", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+     { type: "text", d: 120, values: "R,,M2,m3,,p4,,p5,m6,,m7,", gas: { class: "intervals" } },
+   ) ;
+let circles = t.querySelectorAll( "g.intervals>circle" )
+circles[ 2 ].setAttribute( "stroke", "darkorange" );
+circles[ 5 ].setAttribute( "stroke", "darkorange" );
+circles[ 6 ].setAttribute( "stroke", "darkorange" );
+</script>
+
+<p>Therefore, a <em>minor scale</em> has some different characteristic intervals:</p>
+
+<table class="flat-borders data-left">
+<caption class="autonum">Characteristic intervals on a minor scale</caption>
+<colgroup></colgroup>
+<thead>
+<tr><th>Symbol</th><th>Name</th><th>length</th></tr>
+</thead><tbody>
+<tr><td> </td><td>prime</td><td>0</td></tr>
+<tr><td>M2</td><td>major 2nd</td><td>2</td></tr>
+<tr class="emphasis"><td>m3</td><td>minor 3rd</td><td>3</td></tr>
+<tr><td>p4</td><td>perfect 4th</td><td>5</td></tr>
+<tr><td>p5</td><td>perfect 5th</td><td>7</td></tr>
+<tr class="emphasis"><td>m6</td><td>minor 6th</td><td>8</td></tr>
+<tr class="emphasis"><td>m7</td><td>minor 7th</td><td>10</td></tr>
+</tbody></table>
+
+<p class="note">NOTE<br />If you are familiar with the characteristic intervals of the major scale, you will only have to memorize the differences to the minor scale, as emphasized in the table above.</p>
+
+<p>For completeness, here an overview over the most common intervals and their length:</p>
+
+<table id="intervals-overview" class="flat-borders data-left">
+<caption class="autonum">Intervals overview</caption>
+<colgroup></colgroup>
+<thead>
+<tr><th>Symbol</th><th>Flavour</th><th>Name</th><th>Length</th></tr>
+</thead><tbody>
+<tr class="dark"><td> </td><td>perfect</td><td>prime</td><td style="background-color:white">0</td></tr>
+<tr><td>m2</td><td>minor </td><td rowspan="2">2nd</td><td>1</td></tr>
+<tr><td>M2</td><td>major</td><td>2</td></tr>
+<tr class="dark"><td>m3</td><td>minor</td><td rowspan="2">3rd</td><td style="background-color:white">3</td></tr>
+<tr class="dark"><td>M3</td><td>major</td><td style="background-color:white">4</td></tr>
+<tr><td>p4</td><td>perfect</td><td rowspan="2">4th</td><td>5</td></tr>
+<tr><td>a4</td><td>augmented</td><td rowspan="2">6</td></tr>
+<tr class="dark"><td>d5</td><td>diminished</td><td rowspan="2">5th</td></tr>
+<tr class="dark"><td>p5</td><td>perfect</td><td style="background-color:white">7</td></tr>
+<tr><td>m6</td><td>minor</td><td rowspan="2">6th</td><td>8</td></tr>
+<tr><td>M6</td><td>major</td><td rowspan="2">9</td></tr>
+<tr class="dark"><td>d7</td><td>diminished</td><td rowspan="3">7th</td></tr>
+<tr class="dark"><td>m7</td><td>minor</td><td style="background-color:white">10</td></tr>
+<tr class="dark"><td>M7</td><td>major</td><td style="background-color:white">11</td></tr>
+</tbody></table>
+
+<p>Some focus aid:</p>
+
+<p class="note">MEMORIZE<br />Second, third, sixth and seventh intervals come in minor and major variants. </p>
+
+<p class="note">MEMORIZE<br />Learn the interval names and their length by heart. You will need that knowledge to successfully work with scale and chords, and navigate on the keyboard or fretboard of your instrument.</p>
+
+<p>In a technical sense, the diminished seventh is actually a major 6th, but in certain (dim7)chords, a seventh is required by the chord naming conventions. </p>
+
+<p>Note that the A minor scale can be obtained by rotating the C major scale clockwise by three half-steps. They share the same notes, so they are called <em>parallel scales</em>.</p>
+
+<!--h2--></div>
+
+<h2 cbc>Triads</h2><div>
+
+<p>If more than one notes sound at the same time, we speak of dyads (2), triads (3), or chords (4 or more). Sometimes they are commonly referred to as "chords".</p>
+
+<p>Notes in chords are not put randomly together. Triads and chord are build from thirds, stacked on top of each other. Because we have two flavours of thirds, minor and major, we can build four different triads, here on based on the root note C:</p>
+
+<figure><figcaption class="figure">The four triad variants</figcaption>
+<svg id="csd-05" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">Cdim</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-05", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,m3,,,d5,,,,,", gas: { class: "intervals" } },
+    ) ;
+</script>
+
+<svg id="csd-06" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">Cm</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-06", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,m3,,,,p5,,,,", gas: { class: "intervals" } },
+    ) ;
+</script>
+
+<svg id="csd-07" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">C</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-07", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,,M3,,,p5,,,,", gas: { class: "intervals" } },
+    ) ;
+</script>
+
+<svg id="csd-08" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">Caug</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-08", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,,M3,,,,a5,,,", gas: { class: "intervals" } },
+    ) ;
+</script>
+</figure>
+
+<p>You can also view the triads as stack of two third intervals, as shown in this table:</p>
+
+<table class="flat-borders data-left">
+<caption class="autonum">Triad characteristics</caption><colgroup></colgroup>
+<thead><tr>
+	<th>Symbol</th>
+	<th>Name</th>
+	<th>Stacked intervals</th>
+	<th colspan="3">Characteristic intervals</th>
+</tr></thead><tbody><tr class="dark">
+	<td>Cdim</td>
+	<td>C diminished</td>
+	<td>m3+m3</td>
+	<td>R</td>
+	<td>m3</td>
+	<td>d5</td>
+</tr><tr>
+	<td>Cm</td>
+	<td>C minor</td>
+	<td>m3+M3</td>
+	<td>R</td>
+	<td>m3</td>
+	<td>p5</td>
+</tr><tr>
+	<td>C</td>
+	<td>C major</td>
+	<td>M3+m3</td>
+	<td>R</td>
+	<td>M3</td>
+	<td>p5</td>
+</tr><tr class="dark">
+	<td>Caug</td>
+	<td>augmented</td>
+	<td>M3+M3</td>
+	<td>R</td>
+	<td>M3</td>
+	<td>a5</td>
+</tr></tbody></table>
+
+<p class="note">MEMORIZE<br />Minor and major triads are the most common. The minor triad has a minor 3rd, the major triad has a major 3rd interval.</p>
+
+<p>Triads are named after the root note, followed by the triad variant name. The C major triad is an exception: Its official name is "C triad", "C major" is sometimes spoken in the context of a triad but <em>never</em> written, because the "M" has a different meaning in the context of chords and could lead to confusion.</p>
+
+<!--h2--></div>
+
+<h2 cbc>Seventh Chords</h2><div>
+
+<p>Stacking another third interval on a triad gives us the seventh chords:</p>
+
+<figure><figcaption class="figure">The most common 7th chords</figcaption>
+<svg id="csd-09" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">Cm7&#9837;5</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-09", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,m3,,,d5,,,,m7,", gas: { class: "intervals" } },
+    ) ;
+</script>
+
+<svg id="csd-10" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">Cm7</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-10", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,m3,,,,p5,,,m7,", gas: { class: "intervals" } },
+    ) ;
+</script>
+
+<svg id="csd-11" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">C7</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-11", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,,M3,,,p5,,,m7,", gas: { class: "intervals" } },
+    ) ;
+</script>
+
+<svg id="csd-12" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+<text x="0" y="5" font-size="16px">CM7</text>
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-12", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,,,M3,,,p5,,,,M7", gas: { class: "intervals" } },
+    ) ;
+</script>
+</figure> 
+
+<p>A m7&#9837;5 is also called "half diminished 7th".</p>
+
+<p>Note the naming convention: A lowercase "m" after the note name indicates a minor third interval. An uppercase "M" after the note name indicates a major 7th interval.</p>
+
+<p>And here the senventh chords in tabluar form:</p>
+
+<table class="flat-borders data-left"><caption class="autonum">Important seventh chords</caption><colgroup></colgroup>
+<thead><tr>
+	<th>Symbol</th>
+	<th>Name</th>
+	<th colspan="4">Characteristic intervals</th>
+</tr></thead><tbody><tr>
+	<td>Cm7&#9837;5</td>
+	<td>minor 7th flat 5<br />half diminished 7th</td>
+	<td>R</td>
+	<td>m3</td>
+	<td>d5</td>
+	<td>m7</td>
+</tr><tr>
+	<td>Cm7</td>
+	<td>minor 7th</td>
+	<td>R</td>
+	<td>m3</td>
+	<td>p5</td>
+	<td>m7</td>
+</tr><tr>
+	<td>C7</td>
+	<td>dominant 7th</td>
+	<td>R</td>
+	<td>M3</td>
+	<td>p5</td>
+	<td>m7</td>
+</tr><tr>
+	<td>CM7</td>
+	<td>major 7th</td>
+	<td>R</td>
+	<td>M3</td>
+	<td>p5</td>
+	<td>M7</td>
+</tr></tbody></table>
+
+<!--h2--></div>
+
+<h2 cbc>Chord Naming Conventions</h2><div>
+
+<p>Chord names are built with efficiency and readability in mind. As a result, names sometimes don't appear to be logical &ndash; just like written sequences of letters are spoken in a 'strange' way. Nevertheless, there is a set of rules:</p>
+
+<ol>
+<li>The first letter is the note name, optionally followed by accidentals.</li>
+<li>If the chord has a minor 3rd interval, a lowercase "m" follows the note name.</li>
+<li>Minor intervals except the 7th are preceded by a lowercase "m", major intervals have no prefix.</li>
+<li>A major 7th interval is preced by an uppercase "M", the minor 7th has no prefix.</li>
+<li>Alterations such as ♭5 follow.</li>
+<li>Extensions are appended.</li>
+</ol>
+
+<!--h2--></div>
+
+<h2 cbc>Sharps and Flats</h2><div>
+
+<p>You may have noticed that there are "empty spaces" between the named notes. In fact these are notes, too, and they are all equally important.</p>
+
+<p>The sharp sign ♯ raises a note by one semitone. The flat sign ♭ lowers a note by one semitone. Sharp and flat signs are collectively called <em>accidentals</em>. So the missing notes actually have <em>two names</em>:</p>
+
+<figure><figcaption class="figure">Sharps and flats</figcaption>
+<svg id="csd-13" class="circular-scale" version="1.1" width="200" viewBox="-100 -100 200 200">
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-13", 
+    { type: "circle" , d:145 } ,
+    { type: "ticklines" , d1:90 , d2:160 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 123, values: ",C#,,D#,,,F#,,G#,,A#,", gas: { class: "notes" } },
+    { type: "text", d: 145, values: "C,,D,,E,F,,G,,A,,B", gas: { class: "notes" } },
+    { type: "text", d: 167, values: ",Db,,Eb,,,Gb,,Ab,,Bb,", gas: { class: "notes" } },
+    ) ;
+</script>
+</figure>
+
+<p>The scale context determines which note names, flats or sharps, have to be used.</p>
+
+<!--h2--></div>
+
+</main><footer id="page-footer"></footer><script type="module" src="/inc/page.js" ></script></body></html>

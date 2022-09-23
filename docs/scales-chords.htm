@@ -1,0 +1,178 @@
+﻿<html lang="en-US"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="template-info" file-name="empty.htm" version="2022-02-09" editor="USP" />
+<meta name="author" content="USP" />
+<meta name="creation-date" content="2022-07-19" />
+<meta name="editor" content="USP" />
+<meta name="change-date" content="2022-07-20" />
+<meta name="version" content="1" />
+<meta name="categories" content="Music > Theory" />
+<meta name="tags" content="music, theory, basics" />
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="/inc/page.css" />
+ <link rel="stylesheet" href="/local.css" />
+ <link rel="stylesheet" href="/inc/music/circular-scale-5.css" />
+
+ <style>
+ table tr.emphasis { background-color : #E0E0E0 }
+ </style>
+
+<script type="module">
+import { createCircularScale } from "/inc/music/circular-scale-5.js";
+globalThis.music = { } ;
+globalThis.music.createCircularScale = createCircularScale ;
+</script>
+
+<title>Music Theory - Scales And Chords</title>
+
+</head><body><header id="page-header"></header><div id="main-toolbar"></div><main id="page-content">
+
+<h1>Scales And Chords</h1>
+
+<p id="page-abstract"></p>
+
+<p>Scales and chords are somehow interrelated. A little bit simplified, but nevertheless useful rule of thumb:</p>
+
+<ol>
+<li>The root of a scale can be any of the 12 notes on the chromatic scale.</li>
+<li>The characteristic intervals of the scale determine the set of available notes.</li>
+<li>Chords are constructed as a stack of thirds, rooted on any note of the scale.</li>
+</ol>
+
+<h2 cbc>The Chromatic Scale</h2><div>
+
+<p>A fancy word for the set of 12 notes in the octave:</p>
+
+<figure><figcaption class="figure">Chromatic scale rooted on C</figcaption>
+<svg id="csd-00" class="circular-scale" version="1.1"viewBox="-95 -95 190 190" width="190" style="border:1px none silver" >
+</svg>
+<script type="module">
+let flats = ",Db,,Eb,,,Gb,,Ab,,Bb," ;
+let sharps = ",C#,,D#,,,F#,,G#,,A#," ;
+music.createCircularScale ( "csd-00", 
+	{ type: "circle" , d:140 } ,
+	{ type: "ticklines" , d1:105 , d2:130 },
+	{ type: "ticknumbers" , d: 75 },
+    { type: "text", d: 140, d2: 24, values: "C,,D,,E,F,,G,,A,,B", gas: { class: "notes" } },
+	{ type: "ovals", d1: 120, d2: 160, d3:26, values: flats, gas: { class: "notes" } },
+	{ type: "bare-text", d: 120, values: flats, gas: { class: "notes" } },
+	{ type: "bare-text", d: 160, values: sharps, gas: { class: "notes" } },
+	) ;
+</script>
+</figure>
+
+<p>The same scale in linear form:</p>
+
+<figure><figcaption class="figure">Chromatic scale in linear form</figcaption>
+<svg version="1.1" width="405" viewBox="-15 -65 390 110" style="border:1px none silver ; max-width:100%">
+<g stroke="black" stroke-width="1">
+	<path d="M 0 0 L 360 0 M 0 -10 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20 m 30 -20 l 0 20" />
+	<line x1="0" y1="-34" x2="360" y2="-34" stroke="grey" stroke-width="3" />
+</g><g fill="white" stroke="black">
+	<circle cx="0" cy="-34" r="11" fill="darkorange"/>
+	<path d="M 19 -24 a 11 11 180 0 0 22 -0 v -20 a 11 11 180 0 0 -22 0 v 20" />
+	<circle cx="60" cy="-34" r="11" />
+	<path d="M 79 -24 a 11 11 180 0 0 22 -0 v -20 a 11 11 180 0 0 -22 0 v 20" />
+	<circle cx="120" cy="-34" r="11" />
+	<circle cx="150" cy="-34" r="11" />
+	<path d="M 169 -24 a 11 11 180 0 0 22 -0 v -20 a 11 11 180 0 0 -22 0 v 20" />
+	<circle cx="210" cy="-34" r="11" />
+	<path d="M 229 -24 a 11 11 180 0 0 22 -0 v -20 a 11 11 180 0 0 -22 0 v 20" />
+	<circle cx="270" cy="-34" r="11" />
+	<path d="M 289 -24 a 11 11 180 0 0 22 -0 v -20 a 11 11 180 0 0 -22 0 v 20" />
+	<circle cx="330" cy="-34" r="11" />
+	<circle cx="360" cy="-34" r="11" fill="darkorange" />
+</g><g text-anchor="middle" stroke="none" font-size="13px">
+	<text x="0" y="-30" fill="white">C</text>
+	<text x="30" y="-20">D&#9837;</text>
+	<text x="30" y="-38">C&#9839;</text>
+	<text x="60" y="-30">D</text>
+	<text x="90" y="-20">E&#9837;</text>
+	<text x="90" y="-38">D&#9839;</text>
+	<text x="120" y="-30">E</text>
+	<text x="150" y="-30">F</text>
+	<text x="180" y="-20">G&#9837;</text>
+	<text x="180" y="-38">F&#9839;</text>
+	<text x="210" y="-30">G</text>
+	<text x="240" y="-20">G&#9837;</text>
+	<text x="240" y="-38">F&#9839;</text>
+	<text x="270" y="-30">A</text>
+	<text x="300" y="-20">B&#9837;</text>
+	<text x="300" y="-38">A&#9839;</text>
+	<text x="330" y="-30">B</text>
+	<text x="360" y="-30" fill="white">C</text>
+	<text x="0" y="30">0</text>
+	<text x="30" y="30">1</text>
+	<text x="60" y="30">2</text>
+	<text x="90" y="30">3</text>
+	<text x="120" y="30">4</text>
+	<text x="150" y="30">5</text>
+	<text x="180" y="30">6</text>
+	<text x="210" y="30">7</text>
+	<text x="240" y="30">8</text>
+	<text x="270" y="30">9</text>
+	<text x="300" y="30">10</text>
+	<text x="330" y="30">11</text>
+	<text x="360" y="30">12</text>
+</g></svg>
+</figure>
+
+<p>The interval between two adjacent notes is always one semitone. Each note can be made the root note of the scale. Nothing changes, except the interval counting.</p>
+
+<!--h2--></div>
+
+<h2 cbc>Major Scale</h2><div>
+
+<p>The major scale has the characteristic interval pattern <tt>R M2 M3 p4 p5 M6 M7</tt>:</p>
+
+<figure><figcaption class="figure">C major scale, notes and characteristic intervals</figcaption>
+<svg id="csd-01" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-01", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "C,,D,,E,F,,G,,A,,B", gas: { class: "notes" } },
+    ) ;
+</script>
+
+<svg id="csd-02" class="circular-scale" version="1.1" width="160" height="160" viewBox="-80 -80 160 160">
+</svg>
+<script type="module">
+music.createCircularScale ( "csd-02", 
+    { type: "circle" , d:120 } ,
+    { type: "ticklines" , d1:105 , d2:130 },
+    { type: "ticknumbers" , d: 75 },
+    { type: "text", d: 120, values: "R,,M2,,M3,p4,,p5,,M6,,M7", gas: { class: "intervals" } },
+    ) ;
+</script>
+<script>
+function rotate( target ) {
+	target = document.getElementById( target );
+	let notes = target.querySelector( "g.notes" );
+	if ( ! notes.hasAttribute( "angle" )) notes.setAttribute( "angle", "0" );
+	let angle = notes.getAttribute( "angle" ) + 30;
+	notes.setAttribute( "transform", `rotate(${angle})` );
+	}
+</script>
+<div onclick="rotate('csd-01')"><button>left</button> <button>right</button></div>
+</figure>
+
+<script>
+function rotate( target ) {
+	let target = document.getElementById( target );
+	let notes = target.querySelector( "g.notes" );
+	if ( ! notes.hasAttribute( "angle" )) notes.setAttribute( "angle", "0" );
+	let angle = notes.getAttribute( "angle" ) + 30;
+	notes.setAttribute( "transform", `rotate(${angle})` );
+	}
+</script>
+
+
+<!--h2--></div>
+
+
+</main><footer id="page-footer"></footer><script type="module" src="/inc/page.js" ></script></body></html>
